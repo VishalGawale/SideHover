@@ -1,0 +1,24 @@
+
+  #background {
+    transition:0.3s ease-out;
+    background:linear-gradient(to left,white 50%,lightgreen 50%);
+    width: 0;
+    background-position: right bottom;
+    position:absolute;
+    background-color: blue;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    visibility: hidden;
+    
+  }
+
+  #button:focus ~ #background {
+    background-color: red;
+    background-position:left  bottom;
+    width:50%;
+    visibility: visible;
+    
+  }
